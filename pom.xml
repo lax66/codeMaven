@@ -26,46 +26,6 @@
   <build>
     <finalName>firstProject</finalName>
     
-  <plugins>
-    <!-- ... other plugins ... -->
-    <plugin>
-      <groupId>org.sonarsource.scanner.maven</groupId>
-      <artifactId>sonar-maven-plugin</artifactId>
-      <version>3.10.0.2594</version>
-    </plugin>
-  </plugins>
-</build>
-
-<profiles>
-  <profile>
-    <id>sonar</id>
-    <build>
-      <plugins>
-        <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>3.10.0.2594</version>
-        </plugin>
-      </plugins>
-    </build>
-  </profile>
-</profiles>
-
-<properties>
-  <!-- SonarQube server URL -->
-  <sonar.host.url>http://your-sonarqube-server-url</sonar.host.url>
-  
-  <!-- SonarQube project key (should be unique within your SonarQube instance) -->
-  <sonar.projectKey>your-unique-project-key</sonar.projectKey>
-  
-  <!-- SonarQube project name -->
-  <sonar.projectName>Your Project Name</sonar.projectName>
-  
-  <!-- SonarQube project version -->
-  <sonar.projectVersion>1.0</sonar.projectVersion>
-</properties>
-
-
-
+  </build>
 </project>
 

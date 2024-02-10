@@ -8,6 +8,27 @@
   <name>firstProject Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+
+    <properties>
+  	<sonar.host.url>http://15.207.54.229:9000/</sonar.host.url>
+    	<sonar.login>admin</sonar.login>
+    	<sonar.password>sonar</sonar.password>
+    </properties>
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>firstProject</finalName>
+  </build>
+</project>
+
+
 <build>
   <plugins>
     <!-- ... other plugins ... -->
@@ -33,26 +54,3 @@
     </build>
   </profile>
 </profiles>
-
-
-
-
-  
-    <properties>
-  	<sonar.host.url>http://15.207.54.229:9000/</sonar.host.url>
-    	<sonar.login>admin</sonar.login>
-    	<sonar.password>sonar</sonar.password>
-    </properties>
-  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  <build>
-    <finalName>firstProject</finalName>
-  </build>
-</project>

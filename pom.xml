@@ -8,13 +8,22 @@
   <name>firstProject Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <sonar.host.url>http://15.207.54.229:9000/</sonar.host.url>
+  </properties>
 
-    <properties>
-  	<sonar.host.url>http://15.207.54.229:9000/</sonar.host.url>
-    	<sonar.login>admin</sonar.login>
-    	<sonar.password>sonar</sonar.password>
-    </properties>
-  
+  <build>
+    <finalName>firstProject</finalName>
+    <plugins>
+      <!-- Add the SonarQube Scanner Maven Plugin -->
+      <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.10.0.2594</version>
+      </plugin>
+    </plugins>
+  </build>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,9 +32,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <build>
-    <finalName>firstProject</finalName>
-    
-  </build>
 </project>
-

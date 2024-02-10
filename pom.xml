@@ -8,6 +8,36 @@
   <name>firstProject Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
+<build>
+  <plugins>
+    <!-- ... other plugins ... -->
+    <plugin>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.10.0.2594</version>
+    </plugin>
+  </plugins>
+</build>
+
+<profiles>
+  <profile>
+    <id>sonar</id>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.10.0.2594</version>
+        </plugin>
+      </plugins>
+    </build>
+  </profile>
+</profiles>
+
+
+
+
+  
     <properties>
   	<sonar.host.url>http://15.207.54.229:9000/</sonar.host.url>
     	<sonar.login>admin</sonar.login>

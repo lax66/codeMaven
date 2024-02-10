@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <sonar.host.url>http://13.233.120.176:9000/</sonar.host.url>
+    <sonar.host.url>http://13.235.81.158:9000/</sonar.host.url>
   </properties>
 
   <build>
